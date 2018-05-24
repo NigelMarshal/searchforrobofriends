@@ -2,6 +2,7 @@
   "name": "robofriends",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nigelmarshal.github.io/searchforrobofriends/",
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -9,9 +10,14 @@
     "tachyons": "^4.9.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
